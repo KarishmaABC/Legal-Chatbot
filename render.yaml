@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: legal-chatbot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        value: 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
